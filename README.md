@@ -1,8 +1,4 @@
-# RedGIFS Downloader Browser Extension (Chrome, Firefox, Edge, Opera, Brave)
-
-
-# RedGIFS Downloader Browser Extension (Chrome, Firefox, Edge, Opera, Brave)
-
+# Redgifs Downloader Browser Extension (Chrome, Firefox, Edge, Opera, Brave)
   
 A browser extension that adds a download button to RedGifs (redgifs.com) pages to easily download GIFs and short videos for convenient offline viewing.
 
