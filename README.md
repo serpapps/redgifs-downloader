@@ -1,12 +1,131 @@
 # RedGIFS Downloader Browser Extension (Chrome, Firefox, Edge, Opera, Brave)
 
 
+# RedGIFS Downloader Browser Extension (Chrome, Firefox, Edge, Opera, Brave)
+
+  
+A browser extension that adds a download button to RedGifs (redgifs.com) pages to easily download GIFs and short videos for convenient offline viewing.
+
+- Save GIFs and short videos for offline viewing any time
+- Protect favorites by downloading before posts are removed
+- Build a personal library of clips you can keep
+- Avoid losing access if accounts are deleted or content disappears
 
 ## Links
-- [Product Page](https://serp.ly/redgifs-downloader)
-- [GitHub Pages](https://serpapps.github.io/redgifs-downloader)
+
+- Get it here: https://serp.ly/redgifs-downloader
+- Check FAQs: https://github.com/orgs/serpapps/discussions/categories/faq
+- Report bugs: https://github.com/serpapps/redgifs-downloader/issues
+- Request features: https://github.com/serpapps/redgifs-downloader/issues
+
+## Table of Contents
+- [Features](#features)
+- [Screenshots](#screenshots)
+- [Videos](#videos)
+- [Installation Instructions](#installation-instructions)
+
+## Features
+
+- One-click download from RedGifs watch pages and feed grids
+- Auto-detect GIFs and videos on the page
+- Floating download button overlay
+- Privacy-friendly with no tracking or data collection
+- Support via the community
+
+## Screenshots
+
+Screenshot coming soon.
+
+## Videos
+
+Video walkthrough coming soon.
+
+## [1.0.0] - 2025-12-24
+
+### Added
+- Download button on watch pages and feed grids
+- Support for MP4 and HLS sources when available
+- Improved detection on single-page navigation
+
+### Supported Pages
+
+| Page Type | Support |
+|-----------|---------|
+| Watch pages | Yes |
+| Explore/feed grid | Yes |
+| Embed/ifr | Yes |
+
+### What's New
+- Universal page support for RedGifs watch and grid views
+- Consistent download experience across page types
+- Built with WXT (wxt.dev) for reliable MV3 builds
+
+## Frequently Asked Questions
+
+### Q: Does this work on RedGifs GIFs?
+A: Yes, it downloads the MP4/HD source when available.
+
+### Q: Does this work on RedGifs video posts?
+A: Yes.
+
+### Q: Does it work on the explore feed?
+A: Yes, each card includes a Download button.
+
+## Installation Instructions
+
+Each release has its own specific installation instructions to make it easier to upgrade or roll back.
+You can find the installation instructions for the specific version in the release:
+- https://github.com/serpapps/redgifs-downloader/releases
+
+### How to Use
+
+1. Visit a RedGifs page where you want to download a GIF or video.
+2. Click the extension icon in your browser.
+3. If needed, click the video to load it fully.
+4. Click "Download" in the popup or on the overlay button.
+
+## Permissions Justifications
+
+### activeTab
+Allows the extension to interact with the currently open RedGifs tab when the user activates the extension.
+
+### contextMenus
+Adds a right-click option to initiate downloads from supported pages.
+
+### downloads
+Saves RedGifs videos and GIFs to the user's device for offline viewing.
+
+### notifications
+Notifies the user about download progress, completion, or errors.
+
+### offscreen
+Processes HLS streams and video data without interrupting browsing.
+
+### scripting
+Injects scripts on RedGifs pages to detect media and attach download UI.
+
+### storage
+Stores extension settings and activation state locally.
+
+### tabs
+Finds the active tab to coordinate downloads and UI updates.
+
+## About
+
+RedGifs is a platform for sharing short video clips and GIFs. Like many platforms, it does not provide a direct offline download workflow.
+This extension adds a simple Download button so you can save content you have access to and keep it for offline viewing.
+
+
+
+## Related
+
+- https://github.com/serpapps/redgifs-downloader
+- [Redgifs Downloader gist](https://gist.github.com/devinschumacher/d5d197773b7af7fd06dfea31f043bfc8)
+
 
 ---
+
+<details>
 
 # RedGifs Video Download Research: Technical Analysis of Stream Patterns, CDNs, and Download Methods
 
@@ -1491,3 +1610,7 @@ The methodologies and tools documented in this research provide a robust foundat
 **Last Updated**: September 2024  
 **Research Version**: 1.0  
 **Next Review**: December 2024
+
+
+
+</details>
