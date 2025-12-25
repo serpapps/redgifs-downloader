@@ -1,6 +1,6 @@
-# redgifs-downloader
+# RedGIFS Downloader Browser Extension (Chrome, Firefox, Edge, Opera, Brave)
 
-This repository is being set up. README will be auto-generated soon.
+
 
 ## Links
 - [Product Page](https://serp.ly/redgifs-downloader)
