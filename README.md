@@ -1,455 +1,175 @@
-# Redgifs Downloader Browser Extension (Chrome, Firefox, Edge, Opera, Brave)
-  
-A browser extension that adds a download button to RedGifs (redgifs.com) pages to easily download GIFs and short videos for convenient offline viewing.
+# Redgifs Downloader (Browser Extension)
 
-- Save GIFs and short videos for offline viewing any time
-- Protect favorites by downloading before posts are removed
-- Build a personal library of clips you can keep
-- Avoid losing access if accounts are deleted or content disappears
+> Download Redgifs clips and short videos as MP4 files from supported pages.
+
+Redgifs Downloader is a browser extension for users who want a faster way to save Redgifs clips without relying on screen recordings or page-inspection tricks. It detects supported Redgifs media from watch pages and feed cards, then lets you export the result as MP4 for offline viewing.
+
+- Save Redgifs clips and short videos for offline playback
+- Detect supported media from watch pages and feed views
+- Export MP4 files for broader compatibility than looping embeds
+- Keep the workflow simple and browser-based
+- Avoid losing access when posts are removed later
 
 ## Links
 
-- Get it here: https://serp.ly/redgifs-downloader
-- Check FAQs: https://github.com/orgs/serpapps/discussions/categories/faq
-- Report bugs: https://github.com/serpapps/redgifs-downloader/issues
-- Request features: https://github.com/serpapps/redgifs-downloader/issues
+- :rocket: Get it here: [Redgifs Downloader](https://serp.ly/redgifs-downloader)
+- :new: Latest release: [GitHub Releases](https://github.com/serpapps/redgifs-downloader/releases/latest)
+- :question: Help center: [SERP Help](https://help.serp.co/en/)
+- :beetle: Report bugs: [GitHub Issues](https://github.com/serpapps/redgifs-downloader/issues)
+- :bulb: Request features: [Feature Requests](https://github.com/serpapps/redgifs-downloader/issues)
+
+## Preview
+
+![Redgifs Downloader workflow preview](assets/workflow-preview.webp)
 
 ## Table of Contents
+
+- [Why Redgifs Downloader](#why-redgifs-downloader)
 - [Features](#features)
-- [Screenshots](#screenshots)
-- [Videos](#videos)
+- [How It Works](#how-it-works)
+- [Step-by-Step Tutorial: How to Download Videos from Redgifs](#step-by-step-tutorial-how-to-download-videos-from-redgifs)
+- [Supported Formats](#supported-formats)
+- [Who It's For](#who-its-for)
+- [Common Use Cases](#common-use-cases)
+- [Troubleshooting](#troubleshooting)
+- [Trial & Access](#trial--access)
 - [Installation Instructions](#installation-instructions)
+- [FAQ](#faq)
+- [License](#license)
+- [Notes](#notes)
+- [About Redgifs](#about-redgifs)
+
+## Why Redgifs Downloader
+
+Redgifs is optimized for fast looping playback and feed browsing, not for giving users a clean save workflow. Generic extensions can miss the actual clip source, especially when navigation happens without a full page reload or when the media is loaded lazily in the feed.
+
+Redgifs Downloader is built for that browsing pattern. It can detect supported clips from active pages, then export them as MP4 files so they are easier to keep, replay, and organize offline.
 
 ## Features
 
-- One-click download from RedGifs watch pages and feed grids
-- Auto-detect GIFs and videos on the page
-- Floating download button overlay
-- Privacy-friendly with no tracking or data collection
-- Support via the community
+- Detects supported Redgifs clips from watch pages and feed cards
+- Handles short-form video workflows more cleanly than generic tools
+- In-page download button built into the video player
+- Feed page scanning to detect multiple videos on browse and search pages
+- Converts HLS streams to downloadable MP4 files in-browser
+- Right-click context menu for a faster download flow
+- Real-time progress tracking with download speed and file size
+- Desktop notifications when downloads complete
+- Auto-saves to an organized REDGIFS subfolder in Downloads
+- Cross-browser support for Chrome, Edge, Brave, Opera, Firefox, Whale, and Yandex
 
-## Screenshots
+## How It Works
 
-Screenshot coming soon.
+1. Install the extension from the latest release.
+2. Open a Redgifs watch page or feed item and start playback.
+3. Let the extension detect the active media source.
+4. Open the popup or use the in-page download button.
+5. Choose the quality or stream option you want.
+6. Start the download and wait for the MP4 export to finish.
+7. Save the final MP4 file locally.
 
-## Videos
+## Step-by-Step Tutorial: How to Download Videos from Redgifs
 
-Video walkthrough coming soon.
+1. Install Redgifs Downloader from the latest GitHub release.
+2. Open Redgifs and sign in if the page requires account access.
+3. Navigate to the clip or feed page you want to save from.
+4. Let the player load fully and start playback.
+5. Click the in-page download button or open the extension popup.
+6. Review the quality options shown by the extension.
+7. Choose the resolution you want if more than one option is available.
+8. Start the download and wait for the MP4 export to finish.
+9. Open the saved clip from your Downloads folder.
 
-## [1.0.0] - 2025-12-24
+## Supported Formats
 
-### Added
-- Download button on watch pages and feed grids
-- Support for MP4 and HLS sources when available
-- Improved detection on single-page navigation
+- Input: supported Redgifs clips and short video sources
+- Input: Redgifs HLS streams
+- Output: MP4
 
-### Supported Pages
+Saved files use MP4 so they are easier to replay on standard media players, transfer between devices, or archive for later access.
 
-| Page Type | Support |
-|-----------|---------|
-| Watch pages | Yes |
-| Explore/feed grid | Yes |
-| Embed/ifr | Yes |
+## Who It's For
 
-### What's New
-- Universal page support for RedGifs watch and grid views
-- Consistent download experience across page types
-- Built with WXT (wxt.dev) for reliable MV3 builds
+- Redgifs users who want offline copies of supported clips
+- People archiving short-form media for later reference
+- Users who want a browser extension instead of manual extraction
+- Anyone who wants a cleaner way to save looping clips as normal video files
+- Users browsing feed pages who want to download multiple clips in one session
 
-## Frequently Asked Questions
+## Common Use Cases
 
-### Q: Does this work on RedGifs GIFs?
-A: Yes, it downloads the MP4/HD source when available.
+- Save a Redgifs clip before it disappears
+- Convert a looping clip into a normal MP4 file
+- Keep a personal offline library of supported clips
+- Avoid screen recording for short-form media
+- Download multiple clips from feed and search pages
 
-### Q: Does this work on RedGifs video posts?
-A: Yes.
+## Troubleshooting
 
-### Q: Does it work on the explore feed?
-A: Yes, each card includes a Download button.
+**The extension does not detect the clip**
+Start playback first and wait for the active media source to load.
+
+**The feed changed without a full reload**
+Open the popup again after navigation so the extension can rescan the active page state.
+
+**The download option is missing**
+Refresh the page and retry after the clip starts playing again.
+
+**The download stopped or failed partway through**
+Check whether your internet connection dropped during the export. Retry the download from the popup.
+
+**The page requires account access**
+The extension only works on media you can already open and play in your active browser session.
+
+## Trial & Access
+
+- Includes **3 free downloads** so you can test the workflow first
+- Email sign-in uses secure one-time password verification
+- No credit card required for the trial
+- Unlimited downloads are available with a paid license
+
+Start here: [https://serp.ly/redgifs-downloader](https://serp.ly/redgifs-downloader)
 
 ## Installation Instructions
 
-Each release has its own specific installation instructions to make it easier to upgrade or roll back.
-You can find the installation instructions for the specific version in the release:
-- https://github.com/serpapps/redgifs-downloader/releases
+1. Open the latest release page: [GitHub Releases](https://github.com/serpapps/redgifs-downloader/releases/latest)
+2. Download the correct build for your browser.
+3. Install the extension.
+4. Open a Redgifs page or clip.
+5. Use the popup to detect and download the media.
 
-### How to Use
+## FAQ
 
-1. Visit a RedGifs page where you want to download a GIF or video.
-2. Click the extension icon in your browser.
-3. If needed, click the video to load it fully.
-4. Click "Download" in the popup or on the overlay button.
+**Can it save Redgifs clips as MP4?**
+Yes. Supported clips are exported as MP4 files.
 
-## Permissions Justifications
+**Does it work only on watch pages?**
+It supports watch pages and supported feed-style views where the media can be detected.
 
-### activeTab
-Allows the extension to interact with the currently open RedGifs tab when the user activates the extension.
+**Can I download from feed pages?**
+Yes. The extension scans feed and search pages, detecting multiple videos for download.
 
-### contextMenus
-Adds a right-click option to initiate downloads from supported pages.
+**Do I need extra software?**
+No. The workflow is handled entirely in the browser extension.
 
-### downloads
-Saves RedGifs videos and GIFs to the user's device for offline viewing.
+**Where are clips saved?**
+They are saved to your default Downloads location, typically inside a REDGIFS subfolder.
 
-### notifications
-Notifies the user about download progress, completion, or errors.
+**What browsers are supported?**
+Chrome, Edge, Brave, Opera, Firefox, Whale, and Yandex.
 
-### offscreen
-Processes HLS streams and video data without interrupting browsing.
+## License
 
-### scripting
-Injects scripts on RedGifs pages to detect media and attach download UI.
+This repository is distributed under the proprietary SERP Apps license in the [LICENSE](LICENSE) file. Review that file before copying, modifying, or redistributing any part of this project.
 
-### storage
-Stores extension settings and activation state locally.
+## Notes
 
-### tabs
-Finds the active tab to coordinate downloads and UI updates.
+- Only download content you own or have explicit permission to save
+- An internet connection is required for downloads
+- Quality depends on the source and what the page exposes
+- Redgifs uses API-based authentication for streams, which the extension handles automatically
+- Some clips may only be available while the original post remains accessible
 
-## About
+## About Redgifs
 
-RedGifs is a platform for sharing short video clips and GIFs. Like many platforms, it does not provide a direct offline download workflow.
-This extension adds a simple Download button so you can save content you have access to and keep it for offline viewing.
-
-
-
-## Related
-
-- https://github.com/serpapps/redgifs-downloader
-- [Redgifs Downloader gist](https://gist.github.com/devinschumacher/d5d197773b7af7fd06dfea31f043bfc8)
-
-
----
-
-<details>
-
-<summary>
-  Research
-</summary>
-
-# How to Download RedGifs Videos: Technical Analysis of Stream Patterns, CDNs, and Download Methods
-
-*A comprehensive research document analyzing RedGifs's video infrastructure, embed patterns, stream formats, and optimal download strategies using modern tools*
-
-**Authors**: SERP Apps  
-**Date**: December 2025  
-**Version**: 1.0
-
----
-
-## Abstract
-
-This research document analyzes RedGifs watch and embed pages, the temporary token API flow, and the CDN hosts used to deliver MP4 and GIF assets. It provides practical extraction strategies for API-driven URLs and fallback methods for capturing direct media requests.
-
-## Table of Contents
-
-1. [Introduction](#1-introduction)
-2. [RedGifs Video Infrastructure Overview](#2-redgifs-video-infrastructure-overview)
-3. [URL Patterns and Detection](#3-url-patterns-and-detection)
-4. [Stream Formats and CDN Analysis](#4-stream-formats-and-cdn-analysis)
-5. [yt-dlp Implementation Strategies](#5-yt-dlp-implementation-strategies)
-6. [FFmpeg Processing Techniques](#6-ffmpeg-processing-techniques)
-7. [Alternative Tools and Backup Methods](#7-alternative-tools-and-backup-methods)
-8. [RedGifs API Integration](#8-redgifs-api-integration)
-9. [Implementation Recommendations](#9-implementation-recommendations)
-10. [Troubleshooting and Edge Cases](#10-troubleshooting-and-edge-cases)
-11. [Conclusion](#11-conclusion)
-
----
-
-## 1. Introduction
-
-RedGifs is a short-form media host that serves MP4 clips and GIF variants through a tokenized API. The platform relies on an authentication token to query media metadata and returns direct CDN URLs for playback.
-
-### 1.1 Research Scope
-
-- RedGifs watch and iframe pages
-- Temporary token API endpoints
-- MP4/GIF URL variants and m4s segments
-- CDN hostnames and URL patterns
-
-### 1.2 Methodology
-
-- Inspect token generation and API responses
-- Capture direct media requests from network logs
-- Validate URLs with yt-dlp and ffprobe
-
----
-
-## 2. RedGifs Video Infrastructure Overview
-
-### 2.1 Video Hosting Types
-
-- API-driven MP4 and GIF delivery
-- fMP4 segments served as .m4s
-- Direct MP4 files hosted on thumbnail CDN
-
-### 2.2 CDN Architecture
-
-- api.redgifs.com (token + metadata)
-- thumbs2.redgifs.com (MP4/GIF assets)
-- media.redgifs.com (segments and alternate encodes)
-
-### 2.3 Video Processing Pipeline
-
-1. User loads watch/iframe page
-2. Client requests temporary token from /v2/auth/temporary
-3. Client queries /v2/gifs/<id> with Bearer token
-4. Client fetches direct MP4/GIF from CDN
-
-### 2.4 Access Control and Authentication
-
-- Bearer token required for API requests
-- Tokens expire quickly; refresh when needed
-- Referer/Origin headers may be checked
-
----
-
-## 3. URL Patterns and Detection
-
-### 3.1 Watch Page URL Patterns
-
-```
-https://www.redgifs.com/watch/<id>
-https://www.redgifs.com/ifr/<id>
-```
-
-### 3.2 Embed URL Patterns
-
-```
-https://www.redgifs.com/ifr/<id>
-```
-
-### 3.3 Direct Media and CDN URL Patterns
-
-```
-https://thumbs2.redgifs.com/<Name>.mp4
-https://thumbs2.redgifs.com/<Name>.gif
-https://media.redgifs.com/<Name>.m4s
-```
-
-### 3.4 Regex Patterns for URL Extraction
-
-```regex
-redgifs\\.com/(?:watch|ifr)/([^/?#]+)
-thumbs2\\.redgifs\\.com/([^/?#]+)\\.(mp4|gif)
-```
-
-### 3.5 Command-line URL Extraction
-
-```bash
-grep -oE "https?://[^'\" ]+\.(mp4|gif|m4s)" page.html | sort -u
-grep -oE "redgifs\\.com/(watch|ifr)/[A-Za-z0-9-]+" page.html | sort -u
-```
-
----
-
-## 4. Stream Formats and CDN Analysis
-
-### 4.1 Stream Formats
-
-| Format | Extension | Notes |
-|--------|-----------|-------|
-| MP4 (progressive) | .mp4 | Direct file URLs hosted on thumbs CDN |
-| GIF | .gif | Animated GIF variants for quick previews |
-| fMP4 segments | .m4s | Segmented assets referenced by playlists |
-
-### 4.2 Typical Quality Ladder
-
-| Quality | Typical Resolution | Notes |
-|---------|--------------------|-------|
-| Low | 360p - 480p | Fast preview streams or mobile variants |
-| Medium | 720p | Common default for web playback |
-| High | 1080p+ | Available when source uploads are higher quality |
-
-### 4.3 CDN URL Construction and Query Parameters
-
-- API returns multiple URL fields for different encodes
-- Filename variants often include size or mobile indicators
-- Signed tokens are short-lived
-
-### 4.4 Validation and Inspection Commands
-
-```bash
-ffprobe -hide_banner -show_streams "clip.mp4"
-ffprobe -hide_banner -show_format "clip.mp4"
-```
-
----
-
-## 5. yt-dlp Implementation Strategies
-
-yt-dlp works well for direct MP4 URLs and can ingest the watch page URL when the extractor resolves the API flow. Use cookies and headers if the API enforces origin checks.
-
-### 5.1 Basic Usage
-
-```bash
-yt-dlp [OPTIONS] [--] URL [URL...]
-yt-dlp -F "https://example.com/watch/123"
-```
-
-### 5.2 Authentication and Cookies
-
-- Use --add-header 'Referer: https://www.redgifs.com/' when direct URLs are gated
-- If using the API directly, pass the Bearer token in headers
-
-### 5.3 Format Selection and Output Templates
-
-```bash
-yt-dlp -f bestvideo+bestaudio/best "URL"
-yt-dlp -o "%(title)s.%(ext)s" "URL"
-yt-dlp --download-archive archive.txt "URL"
-```
-
-### 5.4 Site-Specific Examples
-
-```bash
-yt-dlp "https://www.redgifs.com/watch/<id>"
-yt-dlp -f best "https://www.redgifs.com/watch/<id>"
-yt-dlp "https://thumbs2.redgifs.com/<Name>.mp4"
-```
-
-### 5.5 Batch and Archive Mode
-
-```bash
-yt-dlp -a urls.txt --download-archive archive.txt
-yt-dlp --no-overwrites --continue "URL"
-```
-
-### 5.6 Error Handling Patterns
-
-- Refresh token if API calls return 401
-- Use --add-header for Referer/Origin if 403 errors appear
-
----
-
-## 6. FFmpeg Processing Techniques
-
-FFmpeg is useful for validating MP4 outputs and remuxing any m4s segments referenced by playlists.
-
-### 6.1 Inspect and Validate Streams
-
-```bash
-ffprobe -hide_banner -i "https://thumbs2.redgifs.com/<Name>.mp4"
-ffmpeg -i "https://thumbs2.redgifs.com/<Name>.mp4" -c copy output.mp4
-```
-
-### 6.2 Common Remux and Repair Patterns
-
-```bash
-ffmpeg -i "playlist.m3u8" -c copy output.mp4
-ffmpeg -i input.mp4 -c copy -movflags +faststart output.mp4
-ffprobe -hide_banner -show_streams output.mp4
-```
-
----
-
-## 7. Alternative Tools and Backup Methods
-
-### 7.1 Streamlink
-
-```bash
-streamlink "https://www.redgifs.com/watch/<id>" best -o output.mp4
-```
-
-### 7.2 aria2c
-
-```bash
-aria2c -o clip.mp4 "https://thumbs2.redgifs.com/<Name>.mp4"
-```
-
-### 7.3 gallery-dl
-
-```bash
-gallery-dl "https://www.redgifs.com/watch/<id>"
-```
-
-### 7.4 Browser DevTools
-
-- Look for api.redgifs.com/v2/gifs/<id> responses
-- Inspect JSON for mp4/gif URL fields
-- Capture direct MP4 request from thumbs2.redgifs.com
-
----
-
-## 8. RedGifs API Integration
-
-### 8.1 Known Endpoints
-
-- POST https://api.redgifs.com/v2/auth/temporary
-- GET https://api.redgifs.com/v2/gifs/<id>
-
-### 8.2 Example Requests
-
-```bash
-curl -X POST https://api.redgifs.com/v2/auth/temporary
-curl -H 'Authorization: Bearer <token>' https://api.redgifs.com/v2/gifs/<id>
-```
-
-### 8.3 Token and Session Handling
-
-- Token responses include an access token and expiry
-- Use the token immediately; refresh on 401
-
----
-
-## 9. Implementation Recommendations
-
-### 9.1 Detection Hierarchy
-
-- Resolve watch/ifr URL to API metadata
-- Select highest quality MP4 from JSON response
-- Fallback to direct CDN URLs from network logs
-
-### 9.2 Site-Specific Notes
-
-- Prefer MP4 URLs from the API response for stable downloads
-- Expose a download button for grid/feeds by reading data attributes
-
-### 9.3 Storage and Naming Strategy
-
-- Use gif or mp4 extension based on selected asset
-- Include RedGifs ID in filenames for deduping
-
----
-
-## 10. Troubleshooting and Edge Cases
-
-- API token expiration mid-download
-- Multiple encodes in response; choose best by resolution
-
----
-
-## 11. Conclusion
-
-RedGifs uses a tokenized API to expose direct MP4/GIF URLs on a CDN. Implementations should request temporary tokens, call the metadata endpoint, and select the best MP4 URL. yt-dlp can handle watch URLs directly, while ffmpeg and aria2c provide stable fallback downloads.
-
-| Tool | Best Use Case | Notes |
-|------|---------------|-------|
-| yt-dlp | Primary downloader for MP4/HLS | Supports cookies, format selection, retries |
-| ffmpeg | Remuxing and validation | Useful for HLS to MP4 conversion |
-| streamlink | Live/HLS fallback | Streams to file or pipes into ffmpeg |
-| aria2c | Multi-connection HTTP/HLS downloads | Good for large files and retries |
-| gallery-dl | Image-first or gallery-heavy sites | Best for gallery or attachment extraction |
-
-
----
-
-## Disclaimer and Ethical Use
-
-This document is provided for lawful, personal, or authorized use cases only. Always respect the site terms of service, content creator rights, and applicable laws. If DRM or explicit access controls are present, do not attempt to bypass them; use official downloads or creator-provided access instead.
-
-## Last Updated
-
-December 2025
-
-## Next Review
-
-90 days from last update or when site playback changes are observed.
-
-## Related
-
-- SERP Apps research index (internal)
-- SERP extension downloaders (internal)
-
-</details>
+Redgifs is a short-form looping media platform built around quick playback and feed browsing. Redgifs Downloader is designed to make supported downloads easier for users who already have access to those clips in the browser.
