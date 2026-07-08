@@ -1,4 +1,4 @@
-# Redgifs Downloader (Browser Extension)
+# Redgifs Video Downloader (Browser Extension)
 
 > Download Redgifs clips and short videos as MP4 files from supported pages.
 
@@ -12,7 +12,7 @@ Redgifs Downloader is a browser extension for users who want a faster way to sav
 
 ## Links
 
-- :rocket: Get it here: [Redgifs Downloader](https://serp.ly/redgifs-downloader)
+- :rocket: Get it here: [Redgifs Downloader](https://serp.ly/redgifs-downloader?via=github)
 - :new: Latest release: [GitHub Releases](https://github.com/serpapps/redgifs-downloader/releases/latest)
 - :question: Help center: [SERP Help](https://help.serp.co/en/)
 - :beetle: Report bugs: [GitHub Issues](https://github.com/serpapps/redgifs-downloader/issues)
@@ -128,7 +128,7 @@ The extension only works on media you can already open and play in your active b
 - No credit card required for the trial
 - Unlimited downloads are available with a paid license
 
-Start here: [https://serp.ly/redgifs-downloader](https://serp.ly/redgifs-downloader)
+Start here: [https://serp.ly/redgifs-downloader?via=github](https://serp.ly/redgifs-downloader?via=github)
 
 ## Installation Instructions
 
