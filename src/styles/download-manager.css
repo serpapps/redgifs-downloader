@@ -1,0 +1,10 @@
+/* Basic stylesheet for RedGifs Download Manager (non-breaking; inline styles still apply) */
+#redgifs-download-manager {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+#redgifs-download-manager .cancel-download-btn:hover {
+  background-color: #f1f3f5;
+}
+#downloads-container {
+  scrollbar-width: thin;
+}
